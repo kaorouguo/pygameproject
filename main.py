@@ -19,7 +19,7 @@ class Player(pygame.sprite.Sprite):
         self.gravity = 0
         self.jump_sound = pygame.mixer.Sound('audio/jump.mp3')
         self.jump_sound.set_volume(0.5)
-21
+
     def player_input(self):
         keys = pygame.key.get_pressed()
         if keys[pygame.K_SPACE] and self.rect.bottom >= 300:
